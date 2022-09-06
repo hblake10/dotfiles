@@ -1,9 +1,20 @@
-Things I need to remember
+Cheat Sheet.
 
 zz adjusts the screen so that the cursor comes to the center of the screen
     zz seems to be a vary useful one to use.
 zt adjusts the screen so that the cursor comes to the top of the screen
 
-zb adjusts the screen so that the cursor comes to the bottom of the screen
+zb adjusts the screen so that the cursor comes to the bottom of the screen need
 
+<C-]> jumps to documentations
+<C-t> jumps back 
+
+check 
+    :help index 
+    :map 
+and maybe
+    :map!
+for user defined and other keybindings.
+For vim recommended custom maps,
+    :help map-which-keys
 
