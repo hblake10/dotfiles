@@ -3,9 +3,6 @@ scriptencoding utf-8
 set fileencodings=utf-8,cp932,sjis,utf-16le
 set fileformats=unix,dos
 execute pathogen#infect()
-nnoremap <Enter> o<ESC>
-nnoremap <Enter> o<ESC>
-nnoremap <Enter> o<ESC>
 execute pathogen#helptags()
 set nocompatible
 syntax enable
@@ -47,13 +44,12 @@ let g:ctrlp_cmd='CtrlPMixed'
 let g:ctrlp_prompt_mappings={
             \ 'PrtExit()': ['<esc>', '<c-c>', '<c-g>', '<c-q>']
             \ }
-
+let g:UltiSnipsSnippetsDir=expand("$HOME/dotfiles/.vim/UltiSnips")
 let g:bufExplorerShowDirectories=0
 let g:bufExplorerShowUnlisted=0
 let g:bufExplorerShowBy='fullpath'
 nnoremap <Leader>l :BufExplorerHorizontalSplit<CR>
 
-" autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 
 augroup vimrc 
     autocmd!
@@ -64,10 +60,5 @@ nnoremap <Leader>cv :e ~/dotfiles/cheatsheets/vim.txt<CR>
 nnoremap <Leader>m :MRU<CR>
 nnoremap q: <Nop>
 nnoremap <Leader>q :qa!<CR>
-" nnoremap <Enter> o<ESC>
-" nnoremap <S-Enter> O<ESC>
 nnoremap <C-l> :noh<CR><C-l>
-" nnoremap <Leader>h <Esc>:call EasyMode()<CR>
-" nnoremap <Leader>H <Esc>:call HardMode()<CR>
-" inoremap <C-d> <Esc>
 

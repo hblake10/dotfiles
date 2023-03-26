@@ -18,3 +18,23 @@ for user defined and other keybindings.
 For vim recommended custom maps,
     :help map-which-keys
 
+Different registers and how to get them.
+    yank                  "" and "0
+    row level cut         "" and "1 ~ "9
+    character level cut   "" and "-
+
+    current buffer name   "%
+    Alternate buffer name "#
+    latest inserted text  ".
+    latest run command    ":
+    latest searched term  "/
+    
+General method for search and replace
+    :%s/{置換前の文字列}/{置換後の文字列}/g<CR>   (s for substitute)
+    
+    flags:
+    g global - if there are more than two matches on the same row, change all
+    c confirm - confirm before replacing
+    n number - show number of matches but don't replace.
+
+
